@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Camera Example</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="controls">
+        <button id="startButton">Start Camera</button>
+        <button id="stopButton">Stop Camera</button>
+        <label for="opacity">
+            Opacity<input type="number" name="opacity" id="opacity">
+        </label>
+        <label for="custom_image">
+            Custom Image<input type="file" name="custom_image" id="custom_image" accept="image/jpeg , image/png , image/jpg">
+        </label>
+      </div>
+        <video id="videoElement" autoplay></video>
+        <!-- default sample image -->
+        <img id="toDraw" src="./sandClock.jpg" alt="Overlay Image">
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
